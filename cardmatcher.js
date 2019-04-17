@@ -1,17 +1,4 @@
 
-matcherController = {
-  init: function( size ) {
-    
-  },
-};
-
-matcherView = {
-  updateGameView: function(  ) {
-    
-  },
-};
-
-
 
 $(document).ready( function() {
   $("#grid-size").focus();
@@ -19,7 +6,7 @@ $(document).ready( function() {
     e.preventDefault();
     var size = $("#grid-size").val();
     if( Math.floor(size/2) === size/2 ){
-      matcherController.init();
+      matcherController.init(size);
       matcherView.updateGameView();
       $("#grid-size-form").hide();
     } else {

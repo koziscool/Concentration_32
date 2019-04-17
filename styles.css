@@ -26,5 +26,43 @@
   margin: 0 auto;
 }
 
+.grid-container{
+  width: 80%;
+  margin: 30px auto;
+}
+
+.card{
+  height: 60px;
+  background-color: lightyellow;
+  margin: 1%;
+  border: 1px solid black;
+  box-sizing: border-box;
+  transition: 0.5s all;
+  transform: rotateY(180deg);
+  display: inline-block;
+}
+
+.card .name{
+  font-size: large;
+  text-align: center;
+  transition: 0.5s all;
+  transform: translateY(60%) rotateY(180deg);
+  backface-visibility: hidden;
+}
+
+.revealed{
+  transform: rotateY(0deg);
+}
+
+.revealed .name {
+  transform: translateY(60%) rotateY(0deg);
+}
+
+.correct{
+  background-color: lime;
+  border-color: darkgreen;
+}
+
+
 
 
